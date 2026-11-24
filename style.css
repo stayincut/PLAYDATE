@@ -222,3 +222,29 @@ form .btn { margin-top: 1.5rem; }
 .quiz-options button:active { transform: translate(3px,3px); box-shadow: 1px 1px 0 var(--ink); }
 .card.match { background: var(--pink); color: #fff; }
 .card.match .who { color: #fff; }
+
+/* ---------- Animationen Startseite ---------- */
+@keyframes drift { from { transform: translateX(0); } to { transform: translateX(40px); } }
+@keyframes hop { 0%,100% { transform: translateY(0) rotate(-10deg); } 50% { transform: translateY(-14px) rotate(-10deg); } }
+@keyframes roll { 0%,70%,100% { transform: rotate(12deg); } 80% { transform: rotate(102deg) translateY(-8px); } 90% { transform: rotate(192deg); } }
+@keyframes spin { to { transform: rotate(348deg); } }
+@keyframes pop { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
+@keyframes blink { 50% { opacity: 0; } }
+@keyframes nudge { 0%,85%,100% { transform: none; } 90% { transform: translate(-2px,-2px); } 95% { transform: translate(2px,2px); } }
+
+.hero .cloud-1 { animation: drift 7s steps(14) infinite alternate; }
+.hero .cloud-2 { animation: drift 9s steps(18) infinite alternate-reverse; }
+.hero .cloud-3 { animation: drift 6s steps(12) infinite alternate; }
+.hero .meeple-1 { animation: hop 1.2s steps(6) infinite; }
+.hero .die-1 { animation: roll 4s steps(8) infinite; }
+.hero .flower-1 { animation: spin 18s linear infinite; }
+.hero h1 { animation: pop .6s steps(6) both; }
+.hero .hook { animation: pop .6s steps(6) .35s both; }
+.hero .hook::after { content: "_"; margin-left: .15em; color: var(--pink); animation: blink 1s steps(1) infinite; }
+.hero .sub, .hero .btn-row { animation: pop .6s steps(6) .6s both; }
+.hero .btn { animation: nudge 4s 2s infinite; }
+.card-pink:hover .icon { animation: hop .6s steps(4) infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
