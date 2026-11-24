@@ -7,22 +7,22 @@
   <meta name="description" content="So läuft der PLAYDATE-Spieleabend in Biel ab: alle zwei Wochen, CHF 10 Eintritt, Spiele und kurze Einführung inklusive. Jetzt Platz reservieren.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Gaegu:wght@400;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=4">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect x='3' y='3' width='34' height='34' rx='8' fill='%23e4572e' stroke='%232a2320' stroke-width='3'/%3E%3Ccircle cx='13' cy='13' r='3.4' fill='white'/%3E%3Ccircle cx='27' cy='27' r='3.4' fill='white'/%3E%3Ccircle cx='20' cy='20' r='3.4' fill='white'/%3E%3C/svg%3E">
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=6">
+  <link rel="icon" href="img/figur.svg">
 </head>
 <body>
 <a class="skip" href="#inhalt">Zum Inhalt springen</a>
 
 <header class="site-header">
   <div class="wrap">
-    <a class="logo" href="index.html" aria-label="PLAYDATE, zur Startseite"><span>P</span><span>L</span><span>A</span><span>Y</span><span>D</span><span>A</span><span>T</span><span>E</span></a>
+    <a class="logo" href="index.html" aria-label="PLAYDATE, zur Startseite"><img src="img/figur.svg" alt="">playdate</a>
     <nav class="main-nav" aria-label="Hauptnavigation">
       <ul>
         <li><a href="index.html">Start</a></li>
         <li><a href="spieleabend.html" aria-current="page">Spieleabend</a></li>
         <li><a href="erster-besuch.html">Dein erster Besuch</a></li>
-        <li><a class="nav-cta" href="#reservieren">Platz reservieren</a></li>
+        <li><a class="nav-cta" href="spieleabend.html#reservieren">Platz reservieren</a></li>
       </ul>
     </nav>
   </div>
@@ -30,81 +30,83 @@
 
 <main id="inhalt">
 
-  <div class="hero small">
+  <div class="hero page">
+    <img class="deco flower-1" src="img/blume.svg" alt="">
     <div class="wrap">
-      <h1>Der Spieleabend: <span class="mark">Ablauf, Preis und Anmeldung</span></h1>
-      <p class="lead">Alle zwei Wochen spielen wir zusammen Brettspiele. Am Tisch sitzen Stammgäste und Leute, die zum ersten Mal da sind. Hier steht alles, was du für deinen Besuch wissen musst.</p>
+      <h1>Der Spieleabend</h1>
+      <p class="lead">Ablauf, Preis und Anmeldung: Hier steht alles, was du für deinen ersten Besuch wissen musst.</p>
     </div>
   </div>
 
-  <section>
+  <section style="padding-top:1rem">
     <div class="wrap">
-      <h2>Das Wichtigste auf einen Blick</h2>
-      <div class="rules">
-        <div class="rules-head">Spielanleitung für deinen Abend</div>
-        <dl>
-          <dt>Wann</dt><dd>Alle zwei Wochen, freitags von 19.00 bis 22.30 Uhr <span class="annahme">(Wochentag und Zeit: Annahme)</span></dd>
-          <dt>Eintritt</dt><dd>CHF 10 pro Person</dd>
-          <dt>Inklusive</dt><dd>Alle Spiele vor Ort und eine kurze Einführung in die Regeln</dd>
-          <dt>Vorkenntnisse</dt><dd>Keine. Neue Gäste sind ausdrücklich willkommen.</dd>
-          <dt>Mitbringen</dt><dd>Nur dich und CHF 10 <span class="annahme">(Bezahlung vor Ort: Annahme)</span></dd>
-          <dt>Wo</dt><dd>Treffpunkt PLAYDATE, Biel <span class="annahme">(fiktiver Ort)</span></dd>
-        </dl>
-      </div>
+      <div class="window ">
+          <div class="window-bar"><span>spielanleitung.txt</span><span class="dots"><i></i><i></i></span></div>
+          <div class="window-body rules">
+            <dl>
+              <dt>Wann</dt><dd>Alle zwei Wochen, freitags von 19.00 bis 22.30 Uhr <span class="annahme">(Wochentag und Zeit: Annahme)</span></dd>
+              <dt>Eintritt</dt><dd>CHF 10 pro Person</dd>
+              <dt>Inklusive</dt><dd>Alle Spiele vor Ort und eine kurze Einführung in die Regeln</dd>
+              <dt>Vorkenntnisse</dt><dd>Keine. Neue Gäste sind ausdrücklich willkommen.</dd>
+              <dt>Mitbringen</dt><dd>Nur dich und CHF 10 <span class="annahme">(Bezahlung vor Ort: Annahme)</span></dd>
+              <dt>Wo</dt><dd>Treffpunkt PLAYDATE, Biel <span class="annahme">(fiktiver Ort)</span></dd>
+            </dl>
+          </div>
+        </div>
     </div>
   </section>
 
-  <section class="band">
+  <section class="pink-zone">
     <div class="wrap">
-      <h2>So läuft der Abend ab</h2>
+      <h2>So läuft der Abend</h2>
       <ol class="board">
         <li><h3>Ankommen</h3><p>Wir begrüssen dich am Eingang, du bezahlst den Eintritt. Sag einfach, wenn du zum ersten Mal da bist.</p></li>
         <li><h3>Tisch finden</h3><p>Wir zeigen dir einen Tisch mit freien Plätzen. Wer allein kommt, spielt so direkt mit anderen.</p></li>
-        <li><h3>Kurze Einführung</h3><p>Vor dem Start erklären wir die Regeln. Den Rest lernst du beim Spielen.</p></li>
+        <li><h3>Einführung</h3><p>Vor dem Start erklären wir die Regeln. Den Rest lernst du beim Spielen.</p></li>
         <li><h3>Spielen</h3><p>Nach einer Runde kannst du bleiben, ein neues Spiel ausprobieren oder den Tisch wechseln.</p></li>
         <li><h3>Gehen, wann du willst</h3><p>Du musst nicht bis zum Schluss bleiben. <span class="annahme">(Annahme)</span></p></li>
       </ol>
     </div>
   </section>
 
-  <section class="band" id="reservieren">
+  <section id="reservieren">
     <div class="wrap">
       <h2>Platz reservieren</h2>
       <p style="max-width:60ch;margin-top:0">So wissen wir, wie viele Tische wir aufstellen müssen. Die Reservation ist gratis, bezahlt wird vor Ort. <span class="annahme">(Annahme)</span> Noch unsicher? <a href="erster-besuch.html">Hier sind die Antworten für deinen ersten Besuch.</a></p>
-      <div class="card form-card">
-        <form id="reservation-form" novalidate>
-          <label for="name">Vorname</label>
-          <input type="text" id="name" name="name" autocomplete="given-name" required>
-
-          <label for="email">E-Mail</label>
-          <input type="email" id="email" name="email" autocomplete="email" required>
-
-          <label for="datum">Datum</label>
-          <select id="datum" name="datum">
-            <option>Freitag, 4. Dezember 2026, 19.00 Uhr</option>
-            <option>Freitag, 18. Dezember 2026, 19.00 Uhr</option>
-          </select>
-
-          <label class="check"><input type="checkbox" name="neu"> Ich komme zum ersten Mal.</label>
-          <label class="check"><input type="checkbox" name="allein"> Ich komme allein und möchte an einen Tisch mit anderen.</label>
-
-          <button type="submit" class="btn btn-primary">Platz reservieren</button>
-          <p class="form-note">Termine: Annahme. Schulprojekt: Es werden keine Daten gespeichert oder verschickt.</p>
-        </form>
-        <div class="success" id="success" role="status" aria-live="polite">
-          <p class="note">Juhu, dein Platz ist reserviert!</p>
-          <p style="margin:0">Wir freuen uns auf dich. Noch Fragen? <a href="erster-besuch.html">Hier findest du die Antworten.</a></p>
+      <div class="form-card" style="margin-top:2rem">
+        <div class="window ">
+          <div class="window-bar"><span>reservation.exe</span><span class="dots"><i></i><i></i></span></div>
+          <div class="window-body">
+          <form id="reservation-form" novalidate>
+            <label for="name">Vorname</label>
+            <input type="text" id="name" name="name" autocomplete="given-name" required>
+            <label for="email">E-Mail</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+            <label for="datum">Datum</label>
+            <select id="datum" name="datum">
+              <option>Freitag, 4. Dezember 2026, 19.00 Uhr</option>
+              <option>Freitag, 18. Dezember 2026, 19.00 Uhr</option>
+            </select>
+            <label class="check"><input type="checkbox" name="neu"> Ich komme zum ersten Mal.</label>
+            <label class="check"><input type="checkbox" name="allein"> Ich komme allein und möchte an einen Tisch mit anderen.</label>
+            <button type="submit" class="btn">platz reservieren!</button>
+            <p class="form-note">Termine: Annahme. Schulprojekt: Es werden keine Daten gespeichert oder verschickt.</p>
+          </form>
+          <div class="success" id="success" role="status" aria-live="polite">
+            <p class="note">Juhu, dein Platz ist reserviert!</p>
+            <p style="margin:0">Wir freuen uns auf dich. Noch Fragen? <a href="erster-besuch.html">Hier findest du die Antworten.</a></p>
+          </div>
+        </div>
         </div>
       </div>
     </div>
   </section>
-
 </main>
 
 <footer class="site-footer">
   <div class="wrap cols">
     <div>
-      <h2>PLAYDATE</h2>
+      <h2>playdate</h2>
       <p>Offene Brettspielabende in Biel. Für alle, auch ohne Vorkenntnisse.</p>
     </div>
     <div>
@@ -122,7 +124,6 @@
     </div>
   </div>
 </footer>
-
 <script>
   document.getElementById('reservation-form').addEventListener('submit', function (e) {
     e.preventDefault();

@@ -7,16 +7,16 @@
   <meta name="description" content="Brettspielabend in Biel: alle zwei Wochen neue Leute treffen und spielen. Ohne Vorkenntnisse, auch allein. CHF 10, Spiele und Einführung inklusive.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Gaegu:wght@400;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=4">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect x='3' y='3' width='34' height='34' rx='8' fill='%23e4572e' stroke='%232a2320' stroke-width='3'/%3E%3Ccircle cx='13' cy='13' r='3.4' fill='white'/%3E%3Ccircle cx='27' cy='27' r='3.4' fill='white'/%3E%3Ccircle cx='20' cy='20' r='3.4' fill='white'/%3E%3C/svg%3E">
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=6">
+  <link rel="icon" href="img/figur.svg">
 </head>
 <body>
 <a class="skip" href="#inhalt">Zum Inhalt springen</a>
 
 <header class="site-header">
   <div class="wrap">
-    <a class="logo" href="index.html" aria-label="PLAYDATE, zur Startseite"><span>P</span><span>L</span><span>A</span><span>Y</span><span>D</span><span>A</span><span>T</span><span>E</span></a>
+    <a class="logo" href="index.html" aria-label="PLAYDATE, zur Startseite"><img src="img/figur.svg" alt="">playdate</a>
     <nav class="main-nav" aria-label="Hauptnavigation">
       <ul>
         <li><a href="index.html" aria-current="page">Start</a></li>
@@ -31,34 +31,47 @@
 <main id="inhalt">
 
   <div class="hero">
-    <div class="scatter s1" aria-hidden="true"><svg viewBox="0 0 64 64"><path d="M32 6C24 6 20 12 20 18c0 4 2 7 4 9L8 32c-5 2-5 8 0 9l12 1-8 18h14l6-12 6 12h14l-8-18 12-1c5-1 5-7 0-9l-16-5c2-2 4-5 4-9 0-6-4-12-12-12z" fill="#e4572e" stroke="#2a2320" stroke-width="3" stroke-linejoin="round"/></svg></div>
-    <div class="scatter s4" aria-hidden="true"><svg viewBox="0 0 64 64"><rect x="5" y="5" width="54" height="54" rx="11" fill="#f5c33b" stroke="#2a2320" stroke-width="3.5"/><circle cx="19" cy="19" r="5" fill="#2a2320"/><circle cx="45" cy="19" r="5" fill="#2a2320"/><circle cx="19" cy="45" r="5" fill="#2a2320"/><circle cx="45" cy="45" r="5" fill="#2a2320"/></svg></div>
-
+    <img class="deco cloud-1" src="img/wolke.svg" alt="">
+    <img class="deco cloud-2" src="img/wolke.svg" alt="">
+    <img class="deco cloud-3" src="img/wolke.svg" alt="">
+    <img class="deco meeple-1" src="img/figur.svg" alt="">
+    <img class="deco die-1" src="img/wuerfel.svg" alt="">
+    <img class="deco flower-1" src="img/blume.svg" alt="">
     <div class="wrap">
-      <h1><span class="kicker">Spieleabend in Biel</span> Du kommst allein. Du gehst mit <span class="mark">neuen Leuten.</span></h1>
-      <p class="lead">Alle zwei Wochen, CHF 10. Spiele und Regeln bringen wir mit.</p>
-      <div class="btn-row">
-        <a class="btn btn-primary" href="spieleabend.html#reservieren">Platz reservieren</a>
-      </div>
+      <h1>Spieleabend <span class="line2">in Biel</span></h1>
+      <p class="hook">Du kommst allein. Du gehst mit neuen Leuten.</p>
+      <p class="sub">Alle zwei Wochen · CHF 10 · Spiele und Regeln inklusive</p>
+      <div class="btn-row"><a class="btn" href="spieleabend.html#reservieren">platz reservieren!</a></div>
     </div>
   </div>
 
-  <section class="band">
+  <section class="pink-zone">
+    <div class="wrap">
+      <p class="intro-text">Neu in Biel und noch niemand für den Abend? Bei PLAYDATE sitzt du nach fünf Minuten mit anderen am Tisch. Wir bringen die Spiele mit und erklären dir die Regeln. Du musst nur kommen.</p>
+      <div class="stats">
+        <div class="stat"><strong>2</strong><span>Wochen bis zum<br>nächsten Abend</span></div>
+        <div class="stat"><strong>CHF 10</strong><span>Eintritt,<br>alles inklusive</span></div>
+        <div class="stat"><strong>0</strong><span>Vorkenntnisse<br>nötig</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
     <div class="wrap">
       <h2>Zum ersten Mal dabei?</h2>
       <div class="cards">
-        <article class="card">
-          <span class="corner c-red">1</span>
+        <article class="card card-pink">
+          <img class="icon" src="img/figur.svg" alt="">
           <h3>Allein kommen? Klar.</h3>
           <p>Sag beim Eingang, dass du neu bist. Wir setzen dich an einen Tisch mit anderen.</p>
         </article>
-        <article class="card">
-          <span class="corner c-blue">2</span>
+        <article class="card card-pink">
+          <img class="icon" src="img/karte.svg" alt="">
           <h3>Regeln? Erklären wir.</h3>
           <p>Vor jedem Spiel gibt es eine kurze Einführung. Den Rest lernst du beim Spielen.</p>
         </article>
-        <article class="card">
-          <span class="corner c-green">3</span>
+        <article class="card card-pink">
+          <img class="icon" src="img/wuerfel.svg" alt="">
           <h3>Mitbringen? Nur CHF 10.</h3>
           <p>Alle Spiele sind vor Ort. Kein Abo, keine Mitgliedschaft.</p>
         </article>
@@ -68,37 +81,45 @@
 
   <section>
     <div class="wrap">
-      <h2>Lenas erster Spieleabend</h2>
-      <div class="story">
-        <span class="fiktiv">(eine erfundene Beispielgeschichte)</span>
-        <p>Lena ist 19 und vor drei Monaten für die Lehre nach Biel gezogen. Unter der Woche hat sie genug zu tun. Aber die Abende sind still, und sie möchte endlich Leute kennenlernen.</p>
-        <p>Auf Instagram sieht sie den PLAYDATE-Spieleabend und reserviert einen Platz. Dann kommen die Zweifel: Sie kennt dort niemanden, und ihr letztes Brettspiel war in der Primarschule. Am Abend steht sie vor der Tür und will fast wieder umkehren.</p>
-        <p>Da geht die Tür auf. «Bist du zum ersten Mal da? Komm rein, wir haben noch einen Platz frei.» Lena sitzt kurz darauf mit drei anderen am Tisch. Einer ist auch zum ersten Mal da. Die Regeln sind schnell erklärt.</p>
-        <p>Nach der ersten Runde lacht der ganze Tisch über einen völlig missglückten Zug. Nach der dritten tauschen sie Nummern aus. Zwei Wochen später kommt Lena wieder, diesmal nicht allein.</p>
-        <p class="punch">Du musst nichts können. Nur kommen.</p>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="wrap">
-      <div class="invite">
-        <span class="ticket-holes" aria-hidden="true"></span><span class="ticket-holes r" aria-hidden="true"></span>
-        <div>
-          <h2>Nächster Spieleabend: Freitag, 4. Dezember 2026</h2>
-          <p>19.00 Uhr · CHF 10 · Spiele und Einführung inklusive <span class="annahme">(Datum und Zeit: Annahme)</span></p>
+      <h2>Lenas erster Abend</h2>
+      <div class="split">
+        <div class="tilt-l">
+          <div class="window ">
+          <div class="window-bar"><span>spieltisch.png</span><span class="dots"><i></i><i></i></span></div>
+          <div class="window-body img"><img src="img/spieltisch.svg" alt="Pixel-Illustration eines Spieltischs mit Spielbrett, Würfeln, Karten und Spielfiguren"></div>
         </div>
-        <a class="btn" href="spieleabend.html#reservieren">Platz reservieren</a>
+          <p class="caption">Illustration: Projektteam</p>
+        </div>
+        <div class="tilt-r">
+          <div class="window ">
+          <div class="window-bar"><span>lena.txt</span><span class="dots"><i></i><i></i></span></div>
+          <div class="window-body story">
+            <span class="fiktiv">Erfundene Beispielgeschichte</span>
+            <p>Lena ist 19 und vor drei Monaten für die Lehre nach Biel gezogen. Unter der Woche hat sie genug zu tun. Aber die Abende sind still.</p>
+            <p>Sie reserviert einen Platz bei PLAYDATE. Dann kommen die Zweifel: Sie kennt dort niemanden, und ihr letztes Brettspiel war in der Primarschule. Vor der Tür will sie fast umkehren.</p>
+            <p>Da geht die Tür auf: «Zum ersten Mal da? Komm rein, wir haben noch einen Platz.» Kurz darauf sitzt sie mit drei anderen am Tisch. Die Regeln sind schnell erklärt.</p>
+            <p>Nach der ersten Runde lacht der ganze Tisch. Nach der dritten tauschen sie Nummern aus. Zwei Wochen später kommt Lena wieder, diesmal nicht allein.</p>
+            <p class="punch">Du musst nichts können. Nur kommen.</p>
+          </div>
+        </div>
+        </div>
       </div>
     </div>
   </section>
 
+  <section class="pink-zone final">
+    <div class="wrap">
+      <h2>Bis bald am Spieltisch</h2>
+      <p>Nächster Spieleabend: Freitag, 4. Dezember 2026, 19.00 Uhr <span class="annahme">(Datum und Zeit: Annahme)</span></p>
+      <div class="btn-row"><a class="btn" href="spieleabend.html#reservieren">platz reservieren!</a></div>
+    </div>
+  </section>
 </main>
 
 <footer class="site-footer">
   <div class="wrap cols">
     <div>
-      <h2>PLAYDATE</h2>
+      <h2>playdate</h2>
       <p>Offene Brettspielabende in Biel. Für alle, auch ohne Vorkenntnisse.</p>
     </div>
     <div>

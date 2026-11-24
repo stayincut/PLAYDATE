@@ -7,9 +7,9 @@
   <meta name="description" content="Zum ersten Mal an einen Brettspielabend, vielleicht sogar allein? Antworten auf die häufigsten Fragen, Tipps für Einsteiger und unser Video-Test.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Gaegu:wght@400;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=4">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect x='3' y='3' width='34' height='34' rx='8' fill='%23e4572e' stroke='%232a2320' stroke-width='3'/%3E%3Ccircle cx='13' cy='13' r='3.4' fill='white'/%3E%3Ccircle cx='27' cy='27' r='3.4' fill='white'/%3E%3Ccircle cx='20' cy='20' r='3.4' fill='white'/%3E%3C/svg%3E">
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=6">
+  <link rel="icon" href="img/figur.svg">
   <style>.todo { background: #fff3b0; outline: 2px dashed #d4a800; padding: 0 .3rem; }</style>
 </head>
 <body>
@@ -17,7 +17,7 @@
 
 <header class="site-header">
   <div class="wrap">
-    <a class="logo" href="index.html" aria-label="PLAYDATE, zur Startseite"><span>P</span><span>L</span><span>A</span><span>Y</span><span>D</span><span>A</span><span>T</span><span>E</span></a>
+    <a class="logo" href="index.html" aria-label="PLAYDATE, zur Startseite"><img src="img/figur.svg" alt="">playdate</a>
     <nav class="main-nav" aria-label="Hauptnavigation">
       <ul>
         <li><a href="index.html">Start</a></li>
@@ -31,14 +31,15 @@
 
 <main id="inhalt">
 
-  <div class="hero small">
+  <div class="hero page">
+    <img class="deco flower-1" src="img/blume.svg" alt="">
     <div class="wrap">
-      <h1>Zum ersten Mal an einen Spieleabend: <span class="mark">Antworten auf deine Fragen</span></h1>
-      <p class="lead">Allein hingehen, wenn man niemanden kennt? Das braucht Mut. Hier findest du ehrliche Antworten auf die Fragen, die sich viele vor dem ersten Besuch stellen, und ein paar Tipps für einen leichten Start.</p>
+      <h1>Dein erster Besuch</h1>
+      <p class="lead">Allein an einen Spieleabend, wenn man niemanden kennt? Das braucht Mut. Hier sind ehrliche Antworten auf die Fragen, die sich viele vorher stellen.</p>
     </div>
   </div>
 
-  <section>
+  <section style="padding-top:1rem">
     <div class="wrap">
       <h2>Unser Test: Wie schnell lernt man ein neues Spiel?</h2>
       <div class="video-box">
@@ -46,7 +47,7 @@
           <!-- Nach dem Dreh: Platzhalter-DIV löschen und die nächste Zeile aktivieren.
           <video controls playsinline preload="metadata" src="media/regeltest.mp4"></video>
           -->
-          <div class="video-placeholder">hier kommt<br>unser Video</div>
+          <div class="video-placeholder">hier kommt<br>unser video</div>
         </div>
         <div>
           <p>Viele zögern vor dem ersten Spieleabend, weil sie Angst haben, die Regeln nicht zu verstehen. Wir wollten wissen, wie gross diese Hürde wirklich ist. Also haben wir es ausprobiert: Julia hat Stephanie ein Spiel erklärt, das Stephanie noch nie gespielt hatte. Mit Stoppuhr.</p>
@@ -59,123 +60,68 @@
     </div>
   </section>
 
-  <section class="band">
+  <section class="pink-zone">
     <div class="wrap faq-list">
-      <h2>Häufige Fragen vor dem ersten Besuch</h2>
-
-      <details>
-        <summary>Kann ich allein zum Spieleabend kommen?</summary>
-        <div><p>Ja. Der Spieleabend ist offen für neue Gäste. Sag beim Ankommen, dass du allein bist. Wir setzen dich an einen Tisch mit freien Plätzen, dann spielst du direkt mit anderen.</p></div>
-      </details>
-
-      <details>
-        <summary>Muss ich die Spiele oder Regeln schon kennen?</summary>
-        <div><p>Nein. Vor jedem Spiel gibt es eine kurze Einführung. Die meisten Regeln versteht man am besten beim Spielen, darum reicht eine kurze Erklärung am Anfang.</p></div>
-      </details>
-
-      <details>
-        <summary>Was kostet der Abend, und was ist dabei?</summary>
-        <div><p>Der Eintritt kostet CHF 10. Dabei sind alle Spiele vor Ort und die Einführung in die Regeln. Du musst also nichts kaufen oder mitbringen.</p></div>
-      </details>
-
-      <details>
-        <summary>Wie oft ist Spieleabend?</summary>
-        <div><p>Alle zwei Wochen. Die nächsten Daten stehen auf der Seite <a href="spieleabend.html">Spieleabend</a>. Du kannst so oft kommen, wie du willst. Eine Mitgliedschaft gibt es nicht.</p></div>
-      </details>
-
-      <details>
-        <summary>Was, wenn ich schlecht spiele oder verliere?</summary>
-        <div><p>Das passiert allen. Am Spieleabend geht es ums gemeinsame Spielen, nicht ums Gewinnen. Für den Einstieg eignen sich Spiele mit kurzen Runden. Dann spielst du schnell eine zweite Partie und merkst, wie du besser wirst.</p></div>
-      </details>
-
-      <details>
-        <summary>Muss ich mich anmelden?</summary>
-        <div><p>Wir empfehlen eine kurze <a href="spieleabend.html#reservieren">Reservation</a>, damit genug Tische bereitstehen. Spontan vorbeikommen geht auch, solange es freie Plätze hat. <span class="annahme">(Annahme)</span></p></div>
-      </details>
-
-      <details>
-        <summary>Darf ich eigene Spiele mitbringen?</summary>
-        <div><p>Du musst nicht, alle Spiele sind vor Ort. Wenn du ein Lieblingsspiel zeigen willst, frag am Eingang kurz nach. <span class="annahme">(Annahme)</span></p></div>
-      </details>
-
-      <details>
-        <summary>Wie lange muss ich bleiben?</summary>
-        <div><p>So lange, wie du Lust hast. Du kannst nach einem Spiel gehen oder bis zum Schluss bleiben. <span class="annahme">(Annahme)</span></p></div>
-      </details>
+      <h2>Häufige Fragen</h2>
+      <details><summary>Kann ich allein zum Spieleabend kommen?</summary><div><p>Ja. Der Spieleabend ist offen für neue Gäste. Sag beim Ankommen, dass du allein bist. Wir setzen dich an einen Tisch mit freien Plätzen, dann spielst du direkt mit anderen.</p></div></details>
+      <details><summary>Muss ich die Spiele oder Regeln schon kennen?</summary><div><p>Nein. Vor jedem Spiel gibt es eine kurze Einführung. Die meisten Regeln versteht man am besten beim Spielen, darum reicht eine kurze Erklärung am Anfang.</p></div></details>
+      <details><summary>Was kostet der Abend, und was ist dabei?</summary><div><p>Der Eintritt kostet CHF 10. Dabei sind alle Spiele vor Ort und die Einführung in die Regeln. Du musst also nichts kaufen oder mitbringen.</p></div></details>
+      <details><summary>Wie oft ist Spieleabend?</summary><div><p>Alle zwei Wochen. Die nächsten Daten stehen auf der Seite <a href="spieleabend.html">Spieleabend</a>. Du kannst so oft kommen, wie du willst. Eine Mitgliedschaft gibt es nicht.</p></div></details>
+      <details><summary>Was, wenn ich schlecht spiele oder verliere?</summary><div><p>Das passiert allen. Am Spieleabend geht es ums gemeinsame Spielen, nicht ums Gewinnen. Für den Einstieg eignen sich Spiele mit kurzen Runden. Dann spielst du schnell eine zweite Partie und merkst, wie du besser wirst.</p></div></details>
+      <details><summary>Muss ich mich anmelden?</summary><div><p>Wir empfehlen eine kurze <a href="spieleabend.html#reservieren">Reservation</a>, damit genug Tische bereitstehen. Spontan vorbeikommen geht auch, solange es freie Plätze hat. <span class="annahme">(Annahme)</span></p></div></details>
+      <details><summary>Darf ich eigene Spiele mitbringen?</summary><div><p>Du musst nicht, alle Spiele sind vor Ort. Wenn du ein Lieblingsspiel zeigen willst, frag am Eingang kurz nach. <span class="annahme">(Annahme)</span></p></div></details>
+      <details><summary>Wie lange muss ich bleiben?</summary><div><p>So lange, wie du Lust hast. Du kannst nach einem Spiel gehen oder bis zum Schluss bleiben. <span class="annahme">(Annahme)</span></p></div></details>
     </div>
   </section>
 
   <section>
     <div class="wrap">
       <h2>Welche Spielart passt zu dir?</h2>
-      <p style="max-width:60ch;margin-top:0">Brettspiel ist nicht gleich Brettspiel. Wenn du weisst, was dir Spass macht, kannst du am Abend gezielt danach fragen.</p>
       <div class="cards">
-        <article class="card top-red">
-          <h3>Kommunikationsspiele</h3>
-          <p>Ihr ratet Begriffe, gebt Hinweise oder erklärt etwas mit wenigen Worten. Schnell erklärt, und es wird viel gelacht.</p>
-          <p class="who">→ für dich, wenn du gern redest</p>
-        </article>
-        <article class="card top-blue">
-          <h3>Reaktions- und Kartenspiele</h3>
-          <p>Kurze, schnelle Runden, bei denen Tempo oder ein gutes Auge zählt. Ideal zum Warmwerden.</p>
-          <p class="who">→ für dich, wenn du direkt loslegen willst</p>
-        </article>
-        <article class="card top-yellow">
-          <h3>Lege- und Taktikspiele</h3>
-          <p>Ihr baut etwas auf, plant ein paar Züge voraus und sammelt Punkte. Eine Partie dauert etwas länger.</p>
-          <p class="who">→ für dich, wenn du gern in Ruhe überlegst</p>
-        </article>
-        <article class="card top-green">
-          <h3>Kooperative Spiele</h3>
-          <p>Alle spielen zusammen gegen das Spiel. Ihr gewinnt oder verliert als Team.</p>
-          <p class="who">→ für dich, wenn du keinen Konkurrenzdruck magst</p>
-        </article>
+        <article class="card"><h3>Kommunikations&shy;spiele</h3><p>Ihr ratet Begriffe, gebt Hinweise oder erklärt etwas mit wenigen Worten. Schnell erklärt, und es wird viel gelacht.</p><p class="who">Für dich, wenn du gern redest</p></article>
+        <article class="card"><h3>Reaktions- und Kartenspiele</h3><p>Kurze, schnelle Runden, bei denen Tempo oder ein gutes Auge zählt. Ideal zum Warmwerden.</p><p class="who">Für dich, wenn du direkt loslegen willst</p></article>
+        <article class="card"><h3>Lege- und Taktikspiele</h3><p>Ihr baut etwas auf, plant ein paar Züge voraus und sammelt Punkte. Eine Partie dauert etwas länger.</p><p class="who">Für dich, wenn du gern in Ruhe überlegst</p></article>
+        <article class="card"><h3>Kooperative Spiele</h3><p>Alle spielen zusammen gegen das Spiel. Ihr gewinnt oder verliert als Team.</p><p class="who">Für dich, wenn du keinen Konkurrenzdruck magst</p></article>
       </div>
     </div>
   </section>
 
-  <section class="band">
+  <section style="padding-top:0">
     <div class="wrap">
-      <h2>3 Tipps für deinen ersten Abend</h2>
+      <h2>3 Tipps für den Start</h2>
       <ol class="tips">
-        <li><h3>1. Komm zum Start</h3><p>Am Anfang bilden sich die ersten Tische. Dann findest du am einfachsten Anschluss.</p></li>
-        <li><h3>2. Sag, dass du neu bist</h3><p>Dann weiss das Team, dass es dir einen passenden Tisch und ein einfaches Spiel zeigen soll.</p></li>
-        <li><h3>3. Starte mit etwas Kurzem</h3><p>Eine schnelle erste Runde nimmt die Nervosität. Danach traust du dich eher an ein längeres Spiel.</p></li>
+        <li><h3>Komm zum Start</h3><p>Am Anfang bilden sich die ersten Tische. Dann findest du am einfachsten Anschluss.</p></li>
+        <li><h3>Sag, dass du neu bist</h3><p>Dann weiss das Team, dass es dir einen passenden Tisch und ein einfaches Spiel zeigen soll.</p></li>
+        <li><h3>Starte mit etwas Kurzem</h3><p>Eine schnelle erste Runde nimmt die Nervosität. Danach traust du dich eher an ein längeres Spiel.</p></li>
       </ol>
     </div>
   </section>
 
-  <section>
+  <section class="pink-zone final">
     <div class="wrap">
-      <div class="invite red">
-        <span class="ticket-holes" aria-hidden="true"></span><span class="ticket-holes r" aria-hidden="true"></span>
-        <div>
-          <h2>Bereit für deinen ersten Spieleabend?</h2>
-          <p>Alle zwei Wochen · CHF 10 · Spiele und Einführung inklusive</p>
-        </div>
-        <a class="btn" href="spieleabend.html#reservieren">Platz reservieren</a>
-      </div>
+      <h2>Bereit für deinen ersten Abend?</h2>
+      <p>Alle zwei Wochen · CHF 10 · Spiele und Einführung inklusive</p>
+      <div class="btn-row"><a class="btn" href="spieleabend.html#reservieren">platz reservieren!</a></div>
     </div>
   </section>
 
   <section>
     <div class="wrap">
-      <h2>Quellen und Hinweise</h2>
+      <h3>Quellen und Hinweise</h3>
       <ul class="sources">
         <li>Preis, Rhythmus, vorhandene Spiele und Einführung: Angaben des Kunden PLAYDATE (Agentur-Briefing B08).</li>
         <li>Mit «Annahme» markierte Angaben stammen nicht aus dem Briefing. Wir haben sie für dieses Schulprojekt angenommen.</li>
-        <li>Spielarten: eigene Einteilung des Projektteams.</li>
+        <li>Spielarten: eigene Einteilung des Projektteams. Illustrationen: Projektteam.</li>
         <li>Video: eigene Aufnahme des Projektteams. Alle gezeigten Personen sind mit der Veröffentlichung einverstanden.</li>
       </ul>
     </div>
   </section>
-
 </main>
 
 <footer class="site-footer">
   <div class="wrap cols">
     <div>
-      <h2>PLAYDATE</h2>
+      <h2>playdate</h2>
       <p>Offene Brettspielabende in Biel. Für alle, auch ohne Vorkenntnisse.</p>
     </div>
     <div>
