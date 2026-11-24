@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=6">
+  <link rel="stylesheet" href="style.css?v=7">
   <link rel="icon" href="img/figur.svg">
   <style>.todo { background: #fff3b0; outline: 2px dashed #d4a800; padding: 0 .3rem; }</style>
 </head>
@@ -68,20 +68,31 @@
       <details><summary>Was kostet der Abend, und was ist dabei?</summary><div><p>Der Eintritt kostet CHF 10. Dabei sind alle Spiele vor Ort und die Einführung in die Regeln. Du musst also nichts kaufen oder mitbringen.</p></div></details>
       <details><summary>Wie oft ist Spieleabend?</summary><div><p>Alle zwei Wochen. Die nächsten Daten stehen auf der Seite <a href="spieleabend.html">Spieleabend</a>. Du kannst so oft kommen, wie du willst. Eine Mitgliedschaft gibt es nicht.</p></div></details>
       <details><summary>Was, wenn ich schlecht spiele oder verliere?</summary><div><p>Das passiert allen. Am Spieleabend geht es ums gemeinsame Spielen, nicht ums Gewinnen. Für den Einstieg eignen sich Spiele mit kurzen Runden. Dann spielst du schnell eine zweite Partie und merkst, wie du besser wirst.</p></div></details>
-      <details><summary>Muss ich mich anmelden?</summary><div><p>Wir empfehlen eine kurze <a href="spieleabend.html#reservieren">Reservation</a>, damit genug Tische bereitstehen. Spontan vorbeikommen geht auch, solange es freie Plätze hat. <span class="annahme">(Annahme)</span></p></div></details>
-      <details><summary>Darf ich eigene Spiele mitbringen?</summary><div><p>Du musst nicht, alle Spiele sind vor Ort. Wenn du ein Lieblingsspiel zeigen willst, frag am Eingang kurz nach. <span class="annahme">(Annahme)</span></p></div></details>
-      <details><summary>Wie lange muss ich bleiben?</summary><div><p>So lange, wie du Lust hast. Du kannst nach einem Spiel gehen oder bis zum Schluss bleiben. <span class="annahme">(Annahme)</span></p></div></details>
+      <details><summary>Muss ich mich anmelden?</summary><div><p>Wir empfehlen eine kurze <a href="spieleabend.html#reservieren">Reservation</a>, damit genug Tische bereitstehen. Spontan vorbeikommen geht auch, solange es freie Plätze hat.<span class="annahme" title="Annahme">*</span></p></div></details>
+      <details><summary>Darf ich eigene Spiele mitbringen?</summary><div><p>Du musst nicht, alle Spiele sind vor Ort. Wenn du ein Lieblingsspiel zeigen willst, frag am Eingang kurz nach.<span class="annahme" title="Annahme">*</span></p></div></details>
+      <details><summary>Wie lange muss ich bleiben?</summary><div><p>So lange, wie du Lust hast. Du kannst nach einem Spiel gehen oder bis zum Schluss bleiben.<span class="annahme" title="Annahme">*</span></p></div></details>
     </div>
   </section>
 
   <section>
     <div class="wrap">
-      <h2>Welche Spielart passt zu dir?</h2>
-      <div class="cards">
-        <article class="card"><h3>Kommunikations&shy;spiele</h3><p>Ihr ratet Begriffe, gebt Hinweise oder erklärt etwas mit wenigen Worten. Schnell erklärt, und es wird viel gelacht.</p><p class="who">Für dich, wenn du gern redest</p></article>
-        <article class="card"><h3>Reaktions- und Kartenspiele</h3><p>Kurze, schnelle Runden, bei denen Tempo oder ein gutes Auge zählt. Ideal zum Warmwerden.</p><p class="who">Für dich, wenn du direkt loslegen willst</p></article>
-        <article class="card"><h3>Lege- und Taktikspiele</h3><p>Ihr baut etwas auf, plant ein paar Züge voraus und sammelt Punkte. Eine Partie dauert etwas länger.</p><p class="who">Für dich, wenn du gern in Ruhe überlegst</p></article>
-        <article class="card"><h3>Kooperative Spiele</h3><p>Alle spielen zusammen gegen das Spiel. Ihr gewinnt oder verliert als Team.</p><p class="who">Für dich, wenn du keinen Konkurrenzdruck magst</p></article>
+      <h2>Welcher Spieltyp bist du?</h2>
+      <p style="max-width:60ch;margin-top:0">Vier kurze Fragen, dann weisst du, wonach du am Spieleabend fragen kannst.</p>
+      <div class="quiz-wrap">
+        <div class="window ">
+          <div class="window-bar"><span>spieltyp-test.exe</span><span class="dots"><i></i><i></i></span></div>
+          <div class="window-body" id="quiz">
+          <noscript><p>Der Test braucht JavaScript. Unten findest du alle Spielarten im Überblick.</p></noscript>
+        </div>
+        </div>
+      </div>
+
+      <h3 style="margin-top:3.5rem;font-size:2rem">Alle Spielarten im Überblick</h3>
+      <div class="cards" style="margin-top:1.4rem">
+        <article class="card" id="typ-komm"><h3>Kommunikations&shy;spiele</h3><p>Ihr ratet Begriffe, gebt Hinweise oder erklärt etwas mit wenigen Worten. Schnell erklärt, und es wird viel gelacht.</p><p class="who">Für dich, wenn du gern redest</p></article>
+        <article class="card" id="typ-reak"><h3>Reaktions- und Kartenspiele</h3><p>Kurze, schnelle Runden, bei denen Tempo oder ein gutes Auge zählt. Ideal zum Warmwerden.</p><p class="who">Für dich, wenn du direkt loslegen willst</p></article>
+        <article class="card" id="typ-takt"><h3>Lege- und Taktikspiele</h3><p>Ihr baut etwas auf, plant ein paar Züge voraus und sammelt Punkte. Eine Partie dauert etwas länger.</p><p class="who">Für dich, wenn du gern in Ruhe überlegst</p></article>
+        <article class="card" id="typ-koop"><h3>Kooperative Spiele</h3><p>Alle spielen zusammen gegen das Spiel. Ihr gewinnt oder verliert als Team.</p><p class="who">Für dich, wenn du keinen Konkurrenzdruck magst</p></article>
       </div>
     </div>
   </section>
@@ -119,26 +130,46 @@
 </main>
 
 <footer class="site-footer">
-  <div class="wrap cols">
-    <div>
-      <h2>playdate</h2>
-      <p>Offene Brettspielabende in Biel. Für alle, auch ohne Vorkenntnisse.</p>
-    </div>
-    <div>
-      <h2>Seiten</h2>
-      <ul>
-        <li><a href="index.html">Start</a></li>
-        <li><a href="spieleabend.html">Spieleabend: Ablauf und Preis</a></li>
-        <li><a href="erster-besuch.html">Dein erster Besuch: Fragen und Antworten</a></li>
-      </ul>
-    </div>
-    <div>
-      <h2>Über dieses Projekt</h2>
-      <p>PLAYDATE ist ein fiktives Unternehmen. Diese Website ist ein Schulprojekt (Marketingfachsprache 2, BBZ-CFP Biel) von Stephanie und Julia, 2026.</p>
-      <p>Angaben mit «Annahme» stammen nicht aus dem Kunden-Briefing.</p>
-    </div>
+  <div class="wrap foot">
+    <a class="logo" href="index.html"><img src="img/figur.svg" alt="">playdate</a>
+    <nav aria-label="Fusszeile"><a href="index.html">Start</a><a href="spieleabend.html">Spieleabend</a><a href="erster-besuch.html">Erster Besuch</a></nav>
   </div>
+  <p class="wrap foot-note">Schulprojekt MFS2, BBZ-CFP Biel · Stephanie &amp; Julia · PLAYDATE ist fiktiv · * Annahme, nicht aus dem Kunden-Briefing</p>
 </footer>
-
+<script>
+(function () {
+  var Q = [
+    { q: 'Am Spieltisch bist du am liebsten …', a: [['am Reden und Lachen', 'komm'], ['schnell und spontan', 'reak'], ['in Ruhe am Planen', 'takt'], ['mit allen im gleichen Team', 'koop']] },
+    { q: 'Wenn du verlierst, dann …', a: [['ist es mir egal, Hauptsache es war lustig', 'komm'], ['will ich sofort eine Revanche', 'reak'], ['überlege ich, was ich besser machen kann', 'takt'], ['lieber zusammen mit allen anderen', 'koop']] },
+    { q: 'Eine Runde darf dauern …', a: [['so lange, wie wir Spass haben', 'komm'], ['ein paar Minuten, dann gleich nochmal', 'reak'], ['gern auch eine Stunde', 'takt'], ['egal, solange wir zusammenhalten', 'koop']] },
+    { q: 'Welcher Satz passt zu dir?', a: [['«Ich erzähle gern Geschichten.»', 'komm'], ['«Ich bin schnell auf Zack.»', 'reak'], ['«Ich denke gern ein paar Züge voraus.»', 'takt'], ['«Zusammen sind wir stärker.»', 'koop']] }
+  ];
+  var R = {
+    komm: ['Kommunikationsspiele', 'Du bist die Person, die den Tisch zum Lachen bringt. Frag am Spieleabend nach einem Kommunikationsspiel: Da zählen Ideen und gute Hinweise mehr als Regelwissen.'],
+    reak: ['Reaktions- und Kartenspiele', 'Du willst nicht lange warten, sondern loslegen. Frag nach einem schnellen Karten- oder Reaktionsspiel. Perfekt für die erste Runde, wenn du noch niemanden kennst.'],
+    takt: ['Lege- und Taktikspiele', 'Du planst gern voraus und tüftelst an der besten Lösung. Frag nach einem Lege- oder Taktikspiel und nimm dir Zeit für eine längere Partie.'],
+    koop: ['Kooperative Spiele', 'Du spielst lieber miteinander als gegeneinander. Frag nach einem kooperativen Spiel: Ihr gewinnt oder verliert als Team.']
+  };
+  var box = document.getElementById('quiz'), i = 0, score = { komm: 0, reak: 0, takt: 0, koop: 0 };
+  function show() {
+    var item = Q[i], html = '<p class="quiz-step">Frage ' + (i + 1) + ' von ' + Q.length + '</p><p class="quiz-q">' + item.q + '</p><div class="quiz-options">';
+    item.a.forEach(function (o, n) { html += '<button type="button" data-t="' + o[1] + '">' + o[0] + '</button>'; });
+    box.innerHTML = html + '</div>';
+    box.querySelectorAll('button').forEach(function (b) {
+      b.addEventListener('click', function () { score[b.dataset.t]++; i++; i < Q.length ? show() : result(); });
+    });
+  }
+  function result() {
+    var best = 'komm';
+    ['reak', 'takt', 'koop'].forEach(function (t) { if (score[t] > score[best]) best = t; });
+    box.innerHTML = '<p class="quiz-step">Dein Ergebnis</p><p class="quiz-q">' + R[best][0] + '</p><p>' + R[best][1] + '</p>' +
+      '<div class="btn-row"><a class="btn" href="spieleabend.html#reservieren">platz reservieren!</a><button type="button" class="btn btn-light" id="again">nochmal</button></div>';
+    document.querySelectorAll('.cards .card').forEach(function (c) { c.classList.remove('match'); });
+    var card = document.getElementById('typ-' + best); if (card) card.classList.add('match');
+    document.getElementById('again').addEventListener('click', function () { i = 0; score = { komm: 0, reak: 0, takt: 0, koop: 0 }; show(); });
+  }
+  show();
+})();
+</script>
 </body>
 </html>

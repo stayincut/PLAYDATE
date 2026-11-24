@@ -113,13 +113,13 @@ section { padding-block: 4.5rem; position: relative; }
 .story .punch { font-family: var(--pixel); font-size: 1.8rem; color: var(--pink); margin: 1.2rem 0 0; line-height: 1.1; }
 
 .annahme { font-size: .78em; color: #777; font-style: italic; white-space: nowrap; }
-.pink-zone .annahme { color: #ffe3f0; }
+
 .window .annahme, .card .annahme { color: #777; }
 
 /* Schluss */
 .final { text-align: center; padding-block: 5rem 5.5rem; }
 .final h2 { font-size: clamp(2.6rem, 8vw, 6rem); margin-bottom: 1rem; }
-.final p { margin: 0 auto; max-width: 46ch; }
+.final p { margin: 0 auto; max-width: 60ch; }
 .final .btn { background: #fff; color: var(--ink); }
 .final .btn-row { justify-content: center; }
 
@@ -195,3 +195,30 @@ form .btn { margin-top: 1.5rem; }
   .window-body { padding: 1.2rem; }
 }
 .board li .annahme, .faq-list details .annahme { color: #777; }
+
+/* Annahme als Sternchen */
+.annahme { font-style: normal; font-size: .8em; vertical-align: super; line-height: 0; color: var(--pink-dark); margin-left: 1px; }
+.pink-zone .annahme { color: #fff; }
+
+/* schlanker Footer */
+.site-footer { padding-block: 1.8rem 1.4rem; }
+.site-footer .foot { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem; }
+.site-footer .logo { color: var(--pink); }
+.site-footer nav { display: flex; gap: 1.4rem; flex-wrap: wrap; }
+.site-footer nav a { font-size: .78rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; text-decoration: none; }
+.site-footer nav a:hover { color: var(--pink); }
+.site-footer .foot-note { font-size: .78rem; color: #999; margin: 1.2rem auto 0; }
+
+/* Spieltyp-Test */
+.quiz-wrap { max-width: 680px; }
+.quiz-step { font-size: .78rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--pink-dark); margin: 0 0 .4rem; }
+.quiz-q { font-family: var(--pixel); font-size: 1.9rem; line-height: 1.1; margin: 0 0 1.2rem; }
+.quiz-options { display: grid; gap: .7rem; }
+.quiz-options button {
+  text-align: left; font: inherit; font-weight: 500; padding: .85rem 1rem; cursor: pointer;
+  background: #fff; border: 3px solid var(--ink); box-shadow: 4px 4px 0 var(--ink); transition: transform .08s, background .08s;
+}
+.quiz-options button:hover, .quiz-options button:focus-visible { background: var(--pink-light); transform: translate(-2px,-2px); outline: none; }
+.quiz-options button:active { transform: translate(3px,3px); box-shadow: 1px 1px 0 var(--ink); }
+.card.match { background: var(--pink); color: #fff; }
+.card.match .who { color: #fff; }

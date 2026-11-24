@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=6">
+  <link rel="stylesheet" href="style.css?v=7">
   <link rel="icon" href="img/figur.svg">
 </head>
 <body>
@@ -44,12 +44,12 @@
           <div class="window-bar"><span>spielanleitung.txt</span><span class="dots"><i></i><i></i></span></div>
           <div class="window-body rules">
             <dl>
-              <dt>Wann</dt><dd>Alle zwei Wochen, freitags von 19.00 bis 22.30 Uhr <span class="annahme">(Wochentag und Zeit: Annahme)</span></dd>
+              <dt>Wann</dt><dd>Alle zwei Wochen, freitags von 19.00 bis 22.30 Uhr<span class="annahme" title="Annahme">*</span></dd>
               <dt>Eintritt</dt><dd>CHF 10 pro Person</dd>
               <dt>Inklusive</dt><dd>Alle Spiele vor Ort und eine kurze Einführung in die Regeln</dd>
               <dt>Vorkenntnisse</dt><dd>Keine. Neue Gäste sind ausdrücklich willkommen.</dd>
-              <dt>Mitbringen</dt><dd>Nur dich und CHF 10 <span class="annahme">(Bezahlung vor Ort: Annahme)</span></dd>
-              <dt>Wo</dt><dd>Treffpunkt PLAYDATE, Biel <span class="annahme">(fiktiver Ort)</span></dd>
+              <dt>Mitbringen</dt><dd>Nur dich und CHF 10<span class="annahme" title="Annahme">*</span></dd>
+              <dt>Wo</dt><dd>Treffpunkt PLAYDATE, Biel<span class="annahme" title="Annahme">*</span></dd>
             </dl>
           </div>
         </div>
@@ -64,7 +64,7 @@
         <li><h3>Tisch finden</h3><p>Wir zeigen dir einen Tisch mit freien Plätzen. Wer allein kommt, spielt so direkt mit anderen.</p></li>
         <li><h3>Einführung</h3><p>Vor dem Start erklären wir die Regeln. Den Rest lernst du beim Spielen.</p></li>
         <li><h3>Spielen</h3><p>Nach einer Runde kannst du bleiben, ein neues Spiel ausprobieren oder den Tisch wechseln.</p></li>
-        <li><h3>Gehen, wann du willst</h3><p>Du musst nicht bis zum Schluss bleiben. <span class="annahme">(Annahme)</span></p></li>
+        <li><h3>Gehen, wann du willst</h3><p>Du musst nicht bis zum Schluss bleiben.<span class="annahme" title="Annahme">*</span></p></li>
       </ol>
     </div>
   </section>
@@ -72,7 +72,7 @@
   <section id="reservieren">
     <div class="wrap">
       <h2>Platz reservieren</h2>
-      <p style="max-width:60ch;margin-top:0">So wissen wir, wie viele Tische wir aufstellen müssen. Die Reservation ist gratis, bezahlt wird vor Ort. <span class="annahme">(Annahme)</span> Noch unsicher? <a href="erster-besuch.html">Hier sind die Antworten für deinen ersten Besuch.</a></p>
+      <p style="max-width:60ch;margin-top:0">So wissen wir, wie viele Tische wir aufstellen müssen. Die Reservation ist gratis, bezahlt wird vor Ort.<span class="annahme" title="Annahme">*</span> Noch unsicher? <a href="erster-besuch.html">Hier sind die Antworten für deinen ersten Besuch.</a></p>
       <div class="form-card" style="margin-top:2rem">
         <div class="window ">
           <div class="window-bar"><span>reservation.exe</span><span class="dots"><i></i><i></i></span></div>
@@ -82,7 +82,7 @@
             <input type="text" id="name" name="name" autocomplete="given-name" required>
             <label for="email">E-Mail</label>
             <input type="email" id="email" name="email" autocomplete="email" required>
-            <label for="datum">Datum</label>
+            <label for="datum">Datum<span class="annahme" title="Annahme">*</span></label>
             <select id="datum" name="datum">
               <option>Freitag, 4. Dezember 2026, 19.00 Uhr</option>
               <option>Freitag, 18. Dezember 2026, 19.00 Uhr</option>
@@ -90,7 +90,7 @@
             <label class="check"><input type="checkbox" name="neu"> Ich komme zum ersten Mal.</label>
             <label class="check"><input type="checkbox" name="allein"> Ich komme allein und möchte an einen Tisch mit anderen.</label>
             <button type="submit" class="btn">platz reservieren!</button>
-            <p class="form-note">Termine: Annahme. Schulprojekt: Es werden keine Daten gespeichert oder verschickt.</p>
+            <p class="form-note">Schulprojekt: Es werden keine Daten gespeichert oder verschickt.</p>
           </form>
           <div class="success" id="success" role="status" aria-live="polite">
             <p class="note">Juhu, dein Platz ist reserviert!</p>
@@ -104,25 +104,11 @@
 </main>
 
 <footer class="site-footer">
-  <div class="wrap cols">
-    <div>
-      <h2>playdate</h2>
-      <p>Offene Brettspielabende in Biel. Für alle, auch ohne Vorkenntnisse.</p>
-    </div>
-    <div>
-      <h2>Seiten</h2>
-      <ul>
-        <li><a href="index.html">Start</a></li>
-        <li><a href="spieleabend.html">Spieleabend: Ablauf und Preis</a></li>
-        <li><a href="erster-besuch.html">Dein erster Besuch: Fragen und Antworten</a></li>
-      </ul>
-    </div>
-    <div>
-      <h2>Über dieses Projekt</h2>
-      <p>PLAYDATE ist ein fiktives Unternehmen. Diese Website ist ein Schulprojekt (Marketingfachsprache 2, BBZ-CFP Biel) von Stephanie und Julia, 2026.</p>
-      <p>Angaben mit «Annahme» stammen nicht aus dem Kunden-Briefing.</p>
-    </div>
+  <div class="wrap foot">
+    <a class="logo" href="index.html"><img src="img/figur.svg" alt="">playdate</a>
+    <nav aria-label="Fusszeile"><a href="index.html">Start</a><a href="spieleabend.html">Spieleabend</a><a href="erster-besuch.html">Erster Besuch</a></nav>
   </div>
+  <p class="wrap foot-note">Schulprojekt MFS2, BBZ-CFP Biel · Stephanie &amp; Julia · PLAYDATE ist fiktiv · * Annahme, nicht aus dem Kunden-Briefing</p>
 </footer>
 <script>
   document.getElementById('reservation-form').addEventListener('submit', function (e) {
